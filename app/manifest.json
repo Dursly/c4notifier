@@ -1,0 +1,22 @@
+{
+  "name": "C4Notifier",
+  "version": "1.1",
+  
+  "manifest_version": 2,
+  "default_locale": "en",
+  
+  "icons": {"128": "icon.png"},
+  
+  "offline_enabled": false,
+
+  "app": {
+    "background": {
+      "scripts": ["background.js"]      
+    }
+  },
+  "permissions": [
+    "http://*/*",
+    "storage",
+    "notifications"
+  ]
+}

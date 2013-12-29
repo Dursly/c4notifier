@@ -1,0 +1,62 @@
+{
+	"inputPlaceHolder": {
+		"message": "Contact name",
+		"description": ""
+	},
+	"inputToolTip": {
+		"message": "Enter contact name",
+		"description": ""
+	},
+	"plusToolTip": {
+		"message": "Click to add contact",
+		"description": ""
+	},
+	"refreshToolTip": {
+		"message": "Click to refresh contact list",
+		"description": ""
+	},
+	"removeToolTip": {
+		"message": "Click to remove contact",
+		"description": ""
+	},
+	"notifyToolTip1": {
+		"message": "Click to",
+		"description": ""
+	},
+	"notifyToolTipDisable": {
+		"message": "disable",
+		"description": ""
+	},
+	"notifyToolTipEnable": {
+		"message": "enable",
+		"description": ""
+	},
+	"notifyToolTip2": {
+		"message": "notifies",
+		"description": ""
+	},
+	"removeUser":{
+		"message":"Remove User",
+		"description":""
+	},
+	"removeUserMsg":{
+		"message":"Do you want to remove",
+		"description":""
+	},
+	"annulla":{
+		"message":"Cancel",
+		"description":""
+	},
+	"rimuovi":{
+		"message":"Remove",
+		"description":""
+	},
+	"mostraOnline":{
+		"message":"Show online contacts",
+		"description":""
+	},
+	"mostraTutti":{
+		"message":"Show all contacts",
+		"description":""
+	}
+}

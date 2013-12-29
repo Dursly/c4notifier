@@ -1,0 +1,62 @@
+{
+	"inputPlaceHolder": {
+		"message": "Nome contatto",
+		"description": ""
+	},
+	"inputToolTip": {
+		"message": "Scrivi il nome del contatto",
+		"description": ""
+	},
+	"plusToolTip": {
+		"message": "Click per aggiungere il contatto",
+		"description": ""
+	},
+	"refreshToolTip": {
+		"message": "Click per aggiornare la lista contatti",
+		"description": ""
+	},
+	"removeToolTip": {
+		"message": "Click per rimuovere il contatto",
+		"description": ""
+	},
+	"notifyToolTip1": {
+		"message": "Click per",
+		"description": ""
+	},
+	"notifyToolTipDisable": {
+		"message": "disattivare",
+		"description": ""
+	},
+	"notifyToolTipEnable": {
+		"message": "attivare",
+		"description": ""
+	},
+	"notifyToolTip2": {
+		"message": "le notifiche",
+		"description": ""
+	},
+	"removeUser":{
+		"message":"Rimuovi Utente",
+		"description":""
+	},
+	"removeUserMsg":{
+		"message":"Vuoi Rimuovere",
+		"description":""
+	},
+	"annulla":{
+		"message":"Annulla",
+		"description":""
+	},
+	"rimuovi":{
+		"message":"Rimuovi",
+		"description":""
+	},
+	"mostraOnline":{
+		"message":"Mostra i contatti online",
+		"description":""
+	},
+	"mostraTutti":{
+		"message":"Mostra tutti i contatti",
+		"description":""
+	}
+}
