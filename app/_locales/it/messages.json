@@ -58,5 +58,17 @@
 	"mostraTutti":{
 		"message":"Mostra tutti i contatti",
 		"description":""
+	},
+	"TitoloFirstNotify":{
+		"message":"C4Notifier",
+		"description":""
+	},
+	"MessaggioFirstNotify":{
+		"message":"I seguenti utenti sono online",
+		"description":""
+	},
+	"eonline":{
+		"message":" è connesso.",
+		"description":""
 	}
 }

@@ -1,6 +1,7 @@
 /*global chrome:false */
 /*global navigator:false */
 /*jshint loopfunc: true */
+
 'use strict';
 
 angular.module('contactListManager')
@@ -52,7 +53,7 @@ angular.module('contactListManager')
 			chrome.notifications.create(user,{
 				type: 'basic',
 				title: 'C4Notifier',
-				message: user + ' è online',
+				message: user + chrome.i18n.getMessage('eonline'),
 				iconUrl: 'icon.png',
 				buttons: [
 					{
@@ -61,6 +62,11 @@ angular.module('contactListManager')
 					}
 				]
 			},function(){});
+			$window.setTimeout(function(){chrome.notifications.clear(user,function(){});}, 30000);
+			chrome.notifications.onClicked.addListener(function( notificationId){
+				$window.open('http://www.cam4.com/'+notificationId,'_blank');
+				chrome.notifications.clear(user,function(){});
+			});
 		}
 	};
 
@@ -117,15 +123,24 @@ angular.module('contactListManager')
 			}
 		}
 	};
+	$scope.getIndexItem = function (itemName){
+		for( var i in $scope.items){
+			if( itemName === $scope.items[i].nome){
+				return parseInt(i);
+			}
+		}
+		$log.error('Modello non trovato nella lista:' + itemName);
+		return -1;
+	};
 
-	$scope.modalRequestRemoveModel = function(modelIndex){
+	$scope.modalRequestRemoveModel = function(modelName){
 		$log.debug('modalRequestRemoveModel called!');
 		var modalInstance = $modal.open({
 			templateUrl: 'confermaRemove.html',
 			controller: 'ModalRemoveCtrl',
 			resolve: {
 				contact: function () {
-					return {nome:$scope.items[modelIndex].nome, indexm: modelIndex};
+					return {nome:modelName, indexm: $scope.getIndexItem(modelName)};
 				}
 			}
 		});

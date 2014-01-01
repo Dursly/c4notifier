@@ -58,5 +58,17 @@
 	"mostraTutti":{
 		"message":"Show all contacts",
 		"description":""
+	},
+	"TitoloFirstNotify":{
+		"message":"C4Notifier",
+		"description":""
+	},
+	"MessaggioFirstNotify":{
+		"message":"Following contacts are online",
+		"description":""
+	},
+	"eonline":{
+		"message":" is online.",
+		"description":""
 	}
 }
