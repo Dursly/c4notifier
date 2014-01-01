@@ -1,4 +1,4 @@
-$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+$icon-font-path: "/fonts/";
 $grid-float-breakpoint: 0em;
 @import 'sass-bootstrap/lib/bootstrap';
 $grid-float-breakpoint: 0em;
@@ -60,4 +60,5 @@ body {
     height: 0px;
     line-height: 14px;
     vertical-align: middle;
+    width: 0.75em;
 }

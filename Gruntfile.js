@@ -289,7 +289,7 @@ module.exports = function (grunt) {
             '*.html',
             'views/{,*/}*.html',
             'manifest.json',
-            'bower_components/sass-bootstrap/fonts/*.*',
+            //'bower_components/sass-bootstrap/fonts/*.*',
             'partials/{,*/}*.html',
             'images/{,*/}*.{webp}',
             'fonts/*'

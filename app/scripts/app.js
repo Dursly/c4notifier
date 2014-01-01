@@ -2,8 +2,6 @@
 'use strict';
 
 angular.module('contactListManager', [
-  'ngResource',
-  'ngSanitize',
   'ngRoute',
   'ui.bootstrap'
 ])

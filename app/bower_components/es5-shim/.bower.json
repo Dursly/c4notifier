@@ -1,12 +1,12 @@
 {
   "name": "es5-shim",
   "homepage": "https://github.com/kriskowal/es5-shim",
-  "version": "2.2.0",
-  "_release": "2.2.0",
+  "version": "2.3.0",
+  "_release": "2.3.0",
   "_resolution": {
     "type": "version",
-    "tag": "v2.2.0",
-    "commit": "e1e154ac0a51900c95d2aef1cd1d1d130a44f4cf"
+    "tag": "v2.3.0",
+    "commit": "16e070c763588290718a907d0fa0a132993e5d6a"
   },
   "_source": "git://github.com/kriskowal/es5-shim.git",
   "_target": ">=2.1.0",

@@ -49,11 +49,17 @@ angular.module('contactListManager')
 
 	var notifyUserOnline = function(user){
 		if($scope.popup === true){
-			chrome.notifications.create('notifica',{
+			chrome.notifications.create(user,{
 				type: 'basic',
 				title: 'C4Notifier',
 				message: user + ' è online',
-				iconUrl: 'icon.png'
+				iconUrl: 'icon.png',
+				buttons: [
+					{
+						title:'Apri',
+						iconUrl:'icon.png'
+					}
+				]
 			},function(){});
 		}
 	};
@@ -142,9 +148,13 @@ angular.module('contactListManager')
 		});
 	};
 	
+	var notificationBtnClick = function(notID){
+		window.open('http://www.cam4.com/'+notID,'_blank');
+	};
+
 	//*****************Costruttore*********************//
 	$scope.init = function(){
-
+		chrome.notifications.onButtonClicked.addListener(notificationBtnClick);
 		chrome.storage.sync.get(['popup','viewOnline'],function(res){
 			if( res !== null){
 				if(res.popup !== null){

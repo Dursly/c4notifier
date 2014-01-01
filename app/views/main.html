@@ -38,7 +38,7 @@
 
         <div>
         </div>         
-          <div style="vertical-align:middle;" ng-animate="'animate'" class="row elenco" ng-repeat="model in items | mostraUserOnline:viewOnline" ng-class="{'sfondoverde': model.online == true}">
+          <div style="vertical-align:middle;" ng-animate="'animate'" class="row elenco" ng-repeat="model in items | orderBy:'nome' | mostraUserOnline:viewOnline" ng-class="{'sfondoverde': model.online == true}">
                
                <div style="vertical-align:middle; " class="col-xs-9 col-sm-10 col-md-10 col-lg-10">
                  <a style="margin-bottom: 0px;" ng-class="{active: model.online}" ng-href="http://www.cam4.com/{{model.nome}}"target=_blank>
