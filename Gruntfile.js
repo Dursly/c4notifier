@@ -117,7 +117,8 @@ module.exports = function (grunt) {
           src: [
             '.tmp',
             '<%= yeoman.dist %>/*',
-            '!<%= yeoman.dist %>/.git*'
+            '!<%= yeoman.dist %>/.git*',
+            'c4notifier.zip'
           ]
         }]
       },
@@ -302,7 +303,7 @@ module.exports = function (grunt) {
           src: [
             '*'
           ]
-        },
+        },/* GlyphIcons no more required!
         {
           expand: true,
           cwd: '<%= yeoman.app %>/bower_components/sass-bootstrap/fonts/',
@@ -310,7 +311,7 @@ module.exports = function (grunt) {
           src: [
             '*'
           ]
-        },
+        },*/
         {
           expand: true,
           cwd: '.tmp/images',
@@ -420,11 +421,23 @@ module.exports = function (grunt) {
         src: ['<%= yeoman.app %>/template/**/*.html'],
         dest: '.tmp/ui-templates.js'
       }
+    },
+    compress: {
+      main:{
+        options:{
+          archive: 'c4notifier.zip',
+          mode: 'zip'
+        },
+        files:[
+          {cwd: 'dist/', expand: true, src: ['**']}
+        ]
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-bower-install');
   grunt.loadNpmTasks('grunt-html2js');
+  grunt.loadNpmTasks('grunt-contrib-compress');
 
   grunt.registerTask('serve', function (target) {
     if (target === 'dist') {
@@ -434,7 +447,7 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'bower-install',
-      'html2js',
+      //'html2js',
       'concurrent:server',
       'autoprefixer',
       'connect:livereload',
@@ -458,7 +471,7 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'bower-install',
-    'html2js',
+    //'html2js',
     'useminPrepare',
     'concurrent:dist',
     'autoprefixer',
@@ -471,7 +484,8 @@ module.exports = function (grunt) {
     'uglify',
     'rev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'compress'
   ]);
 
   grunt.registerTask('default', [

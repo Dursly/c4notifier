@@ -1,8 +1,22 @@
-$icon-font-path: "/fonts/";
+/*Disabilita glyphicons */
+$icon-font-path: "/fonts";
+$iconSpritePath: '';
+$iconWhiteSpritePath: '';
+
+/*Override impostazione responsive*/
 $grid-float-breakpoint: 0em;
-@import 'sass-bootstrap/lib/bootstrap';
+
+/*Importazione Bootstrap*/
+$bootstrapPath: "sass-bootstrap/lib/";
+@import 'bootstrap';
 $grid-float-breakpoint: 0em;
+
+/*Importazione font awesome*/
 @import 'font-awesome/scss/font-awesome';
+
+/*Import Animations */
+@import 'animate';
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -62,3 +76,9 @@ body {
     vertical-align: middle;
     width: 0.75em;
 }
+
+.elenco:hover{
+    background-color: #ffffaa;
+}
+
+

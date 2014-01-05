@@ -70,5 +70,17 @@
 	"eonline":{
 		"message":" is online.",
 		"description":""
+	},
+	"contactOnline":{
+		"message":"The contact is online",
+		"description":""
+	},
+	"contactOffline":{
+		"message":"The contact is offline",
+		"description":""
+	},
+	"clickToOpen":{
+		"message":"Click open contact page in a new tab",
+		"description":""
 	}
 }

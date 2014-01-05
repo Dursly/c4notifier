@@ -1,0 +1,32 @@
+$heightRowAnimation: 20px;
+$AnimationTime: 200ms;
+.animate.ng-enter, 
+.animate.ng-leave,
+.sfondoverde.ng-remove,
+.sfondoverde.ng-add
+{ 
+    -webkit-transition: $AnimationTime cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition: $AnimationTime cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition: $AnimationTime cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition: $AnimationTime cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    transition: $AnimationTime cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space:nowrap;
+} 
+ 
+.animate.ng-leave.animate.ng-leave-active,
+.animate.ng-enter {
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+}
+ 
+.animate.ng-enter.animate.ng-enter-active, 
+.animate.ng-leave {
+    opacity: 1;
+    width: 150px;
+    height: $heightRowAnimation;
+}

@@ -70,5 +70,17 @@
 	"eonline":{
 		"message":" è connesso.",
 		"description":""
+	},
+	"contactOnline":{
+		"message":"Il contatto è connesso",
+		"description":""
+	},
+	"contactOffline":{
+		"message":"Il contatto è offline",
+		"description":""
+	},
+	"clickToOpen":{
+		"message":"Click per aprire la pagina del contatto",
+		"description":""
 	}
 }

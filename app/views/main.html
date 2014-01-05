@@ -4,7 +4,7 @@
           <form name="userform" class="navbar-form navbar-left" ng-submit="addModel()">
                   <input tooltip-popup-delay='1000' tooltip="{{ 'inputToolTip' | translate }}" tooltip-placement="bottom" name="name"  placeholder="{{ 'inputPlaceHolder' | translate }}" style="display:inline-block; width:auto; " ng-required="true" type="text" ng-model="newItem.nome" size="20" class="form-control" ngMinlength="1" required>
                   <input type="submit" style="height: 0px; width: 0px; border: none; padding: 0px;" hidefocus="true">
-                  <a class="btn" ng-click="addModel()"><i tooltip-popup-delay='1000' tooltip="{{ 'plusToolTip' | translate }}" tooltip-placement="bottom" class="glyphicon glyphicon-plus"> </i></a>
+                  <a class="btn" ng-click="addModel()"><i tooltip-popup-delay='1000' tooltip="{{ 'plusToolTip' | translate }}" tooltip-placement="bottom" class="fa fa-plus"> </i></a>
                   </form>
 
 
@@ -38,17 +38,17 @@
 
         <div>
         </div>         
-          <div style="vertical-align:middle;" ng-animate="'animate'" class="row elenco" ng-repeat="model in items | orderBy:'nome' | mostraUserOnline:viewOnline" ng-class="{'sfondoverde': model.online == true}">
+          <div style="vertical-align:middle;"  class="animate row elenco" ng-repeat="model in items | orderBy:'nome' | mostraUserOnline:viewOnline" ng-class="{'sfondoverde': model.online == true}">
                
                <div style="vertical-align:middle; " class="col-xs-9 col-sm-10 col-md-10 col-lg-10">
-                 <a style="margin-bottom: 0px;" ng-class="{active: model.online}" ng-href="http://www.cam4.com/{{model.nome}}"target=_blank>
-                     <i ng-if="model.online" class="glyphicon glyphicon-ok"> </i>
-                     <i ng-if="model.online == false" class="glyphicon glyphicon-ban-circle"> </i>
+                 <a style="margin-bottom: 0px;" ng-class="{active: model.online}" ng-href="http://www.cam4.com/{{model.nome}}"target="_blank">
+                     <i ng-if="model.online" class="fa fa-video-camera" tooltip-popup-delay='1000' tooltip="{{ 'contactOnline' | translate }}" tooltip-placement="right"> </i>
+                     <i ng-if="model.online == false" class="fa fa-square-o" tooltip-popup-delay='1000' tooltip="{{ 'contactOffline' | translate }}" tooltip-placement="right"> </i>
                      {{model.nome}}
                  </a>
                </div>
                 <div style="vertical-align:middle;" class="col-xs-3 col-sm-2 col-md-2 col-lg-2">                  
-                    <p t style="margin-bottom: 0px; text-align:right"><a data-toggle="modal" style="padding: 0px 0px;"class="btn" ><i ooltip-popup-delay='1000' tooltip="{{ 'removeToolTip' | translate }}" tooltip-placement="left" ng-click="modalRequestRemoveModel(model.nome)"class="glyphicon glyphicon-trash"> </i></a></p> 
+                    <p t style="margin-bottom: 0px; text-align:right"><a data-toggle="modal" style="padding: 0px 0px;"class="btn" ><i ooltip-popup-delay='1000' tooltip="{{ 'removeToolTip' | translate }}" tooltip-placement="left" ng-click="modalRequestRemoveModel(model.nome)"class="fa fa-trash-o"> </i></a></p> 
                 </div>
 
           </div>         

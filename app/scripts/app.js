@@ -2,6 +2,7 @@
 'use strict';
 
 angular.module('contactListManager', [
+  'ngAnimate',
   'ngRoute',
   'ui.bootstrap'
 ])
