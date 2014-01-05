@@ -13,3 +13,6 @@ Changelog
 * Automated zip creation
 * Added animations
 * Libraries updated
+
+
+You can found it on [Chrome Store](https://chrome.google.com/webstore/detail/c4notifier/hncekpdklkbhjafeglflhafaibfgcjpj)
