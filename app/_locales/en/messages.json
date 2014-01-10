@@ -19,20 +19,12 @@
 		"message": "Click to remove contact",
 		"description": ""
 	},
-	"notifyToolTip1": {
-		"message": "Click to",
-		"description": ""
-	},
 	"notifyToolTipDisable": {
-		"message": "disable",
+		"message": "Click to disable notifies",
 		"description": ""
 	},
 	"notifyToolTipEnable": {
-		"message": "enable",
-		"description": ""
-	},
-	"notifyToolTip2": {
-		"message": "notifies",
+		"message": "Click to enable notifies",
 		"description": ""
 	},
 	"removeUser":{

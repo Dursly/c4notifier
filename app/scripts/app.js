@@ -7,7 +7,7 @@ angular.module('contactListManager', [
   'ui.bootstrap'
 ])
   .config(function ($routeProvider,$logProvider) {
-    $logProvider.debugEnabled(false);
+    $logProvider.debugEnabled(true);
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',

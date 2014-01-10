@@ -2,16 +2,16 @@
 <!-- nAVbAR -->
       <nav class="navbar navbar-default navbar-fixed-top">
           <form name="userform" class="navbar-form navbar-left" ng-submit="addModel()">
-                  <input tooltip-popup-delay='1000' tooltip="{{ 'inputToolTip' | translate }}" tooltip-placement="bottom" name="name"  placeholder="{{ 'inputPlaceHolder' | translate }}" style="display:inline-block; width:auto; " ng-required="true" type="text" ng-model="newItem.nome" size="20" class="form-control" ngMinlength="1" required>
+                  <input tooltip-popup-delay='1000' tooltip="{{ 'inputToolTip' | translate }}" tooltip-placement="bottom" name="name"  placeholder="{{ 'inputPlaceHolder' | translate }}" style="display:inline-block; width:auto; " ng-required="true" type="text" ng-model="newItem.nome" size="20" class="form-control" required>
                   <input type="submit" style="height: 0px; width: 0px; border: none; padding: 0px;" hidefocus="true">
-                  <a class="btn" ng-click="addModel()"><i tooltip-popup-delay='1000' tooltip="{{ 'plusToolTip' | translate }}" tooltip-placement="bottom" class="fa fa-plus"> </i></a>
+                  <a class="btn" ng-click="addModel()" ng-disabled="userform.$invalid"><i tooltip-popup-delay='1000' tooltip="{{ 'plusToolTip' | translate }}" tooltip-placement="bottom" class="fa fa-plus" > </i></a>
                   </form>
 
 
          <ul class=" nav navbar-nav navbar-right ">
           <li>
             <a class="btn" ng-click="changeViewOnline()">
-              <span class=" fa-lg">
+              <span class="fa-stack fa-lg">
                 <i tooltip-popup-delay='1000' tooltip="{{viewOnline? ('mostraOnline'| translate):('mostraTutti'| translate)}}" tooltip-placement="bottom" ng-class="{'fa fa-check-circle-o fa-stack-1x':viewOnline, 'fa fa-circle-o fa-stack-1x':!viewOnline}"></i>
              </span> 
             </a>
@@ -19,14 +19,14 @@
          <li>
           <a  class="btn" ng-click="changePopUpStatus()">
             <span class="fa-stack fa-lg">
-              <i tooltip-popup-delay='1000' tooltip="{{ 'notifyToolTip1' | translate }} {{popup? ('notifyToolTipDisable'|translate) : ('notifyToolTipEnable'|translate)}} {{'notifyToolTip2'|translate}}" tooltip-placement="left" class="fa fa-bell-o fa-stack-1x"></i>
+              <i tooltip-popup-delay='1000' tooltip="{{popup? ('notifyToolTipDisable'|translate) : ('notifyToolTipEnable'|translate)}}" tooltip-placement="left" class="fa fa-bell-o fa-stack-1x"></i>
               <i ng-if="!popup" class="fa fa-ban fa-stack-1x"></i>
             </span>
           </a>
          </li>
           <li>          
-            <a  style="margin-right:5px;"class="btn" ng-click="refresh()">
-              <span class=" fa-lg">
+            <a  class="btn marginLastElementRight" ng-click="refresh()">
+              <span class="fa-stack fa-lg">
                 <i tooltip-popup-delay='1000' tooltip="{{ 'refreshToolTip' | translate }}" tooltip-placement="left" class="fa fa-refresh fa-stack-1x"> </i>
               </span>
             </a>

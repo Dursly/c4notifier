@@ -164,7 +164,7 @@ module.exports = function (grunt) {
         generatedImagesDir: '.tmp/images/generated',
         imagesDir: '<%= yeoman.app %>/images',
         javascriptsDir: '<%= yeoman.app %>/scripts',
-        fontsDir: '<%= yeoman.app %>/styles/fonts',
+        fontsDir: '<%= yeoman.app %>/fonts',
         importPath: '<%= yeoman.app %>/bower_components',
         httpImagesPath: '/images',
         httpGeneratedImagesPath: '/images/generated',
@@ -192,8 +192,7 @@ module.exports = function (grunt) {
           src: [
             '<%= yeoman.dist %>/scripts/{,*/}*.js',
             '<%= yeoman.dist %>/styles/{,*/}*.css',
-            '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
-            '<%= yeoman.dist %>/styles/fonts/*'
+            '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
           ]
         }
       }
@@ -295,7 +294,7 @@ module.exports = function (grunt) {
             'images/{,*/}*.{webp}',
             'fonts/*'
           ]
-        },
+        },/*
         {
           expand: true,
           cwd: '<%= yeoman.app %>/bower_components/font-awesome/fonts',
@@ -303,7 +302,7 @@ module.exports = function (grunt) {
           src: [
             '*'
           ]
-        },/* GlyphIcons no more required!
+        },*//* GlyphIcons no more required!
         {
           expand: true,
           cwd: '<%= yeoman.app %>/bower_components/sass-bootstrap/fonts/',

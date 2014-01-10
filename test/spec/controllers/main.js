@@ -40,6 +40,29 @@ describe('Controller: userctrl', function () {
     expect( scope.getIndexItem('nonEsistente')).toEqual(-1);
 
   });
+/*
+  it('Verifico l\'inserimento degli username', function(){
+
+    var testUserName = [
+      'ciao',
+      'http://www.cam4.com/prova1',
+      'http://it.cam4.com.de/prova2',
+      'modella1',
+      'prova_3'
+    ];
+    for( var i = 0; i < testUserName.length; i++){
+      scope.newItem.nome = testUserName[i];
+      scope.addModel();
+      dump(scope.items);
+    }
+    expect ( scope.items ).toEqual([
+      'ciao',
+      'prova1',
+      'prova2',
+      'modella1',
+      'prova_3'
+    ]);
+  });
   /*
   it('Dovrebbe cambiare lo stato viewOnline da false a true', function(){
     scope.viewOnline = false;

@@ -23,19 +23,46 @@ angular.module('contactListManager')
 	};
 	$scope.viewOnline= false;
 	$scope.popup = false;
+	$scope.refreshTime = 30000;
 
 	$interval(function(){
 		$scope.refresh();
-	},30000);
+	},$scope.refreshTime);
 
 	$scope.addModel = function(){
-		$scope.items.push({
-			nome: $scope.newItem.nome,
-			online: false
-		});
-		$scope.newItem.nome ='';
-		saveUsers();
-		$scope.refresh();
+		$log.debug('Aggiungo utente');
+		var pattern = /[A-Za-z0-9_-]+/;
+		var patternURL = new RegExp('(http|https):\\/\\/(\\w+)\\.cam4(\\.\\w+)+\\/(\\w+)');
+		//Validate username
+		var urlUserName = $scope.newItem.nome.match(patternURL);
+		$log.debug(urlUserName);
+		if(urlUserName !== null ){
+			var username = urlUserName[4];
+			$log.debug(urlUserName);
+			$log.debug('Riconosciuto URL, username:' + username);
+			$scope.items.push({
+				nome: username,
+				online: false
+			});
+			$scope.newItem.nome ='';
+			saveUsers();
+			$scope.refresh();
+		}
+		else if( pattern.test($scope.newItem.nome)){
+			$log.debug('Riconosciuto username Valido');
+			$scope.items.push({
+				nome: $scope.newItem.nome,
+				online: false
+			});
+			$scope.newItem.nome ='';
+			saveUsers();
+			$scope.refresh();
+		}
+		else{
+			$log.debug('Nome utente inserito non valido: resetto campo username');
+			$scope.newItem.nome ='';
+		}
+
 	};
 
 	$scope.changePopUpStatus = function(){
@@ -47,6 +74,8 @@ angular.module('contactListManager')
 		$scope.items.splice(model,1);
 		saveUsers();
 	};
+
+	$scope.notifyShowTime = 10000;
 
 	var notifyUserOnline = function(user){
 		if($scope.popup === true){
@@ -62,7 +91,7 @@ angular.module('contactListManager')
 					}
 				]
 			},function(){});
-			$window.setTimeout(function(){chrome.notifications.clear(user,function(){});}, 30000);
+			$window.setTimeout(function(){chrome.notifications.clear(user,function(){});}, $scope.notifyShowTime);
 			chrome.notifications.onClicked.addListener(function( notificationId){
 				$window.open('http://www.cam4.com/'+notificationId,'_blank');
 				chrome.notifications.clear(user,function(){});
@@ -90,8 +119,7 @@ angular.module('contactListManager')
 		chrome.storage.sync.get('users',function(res){
 			$log.debug(res);
 			while(res.users.length){
-				var a = res.users.pop();
-				$scope.items.push({nome:a, online: false});
+				$scope.items.push({nome:res.users.pop(), online: false});
 			}
 			$scope.refresh();
 		});
@@ -167,6 +195,7 @@ angular.module('contactListManager')
 		window.open('http://www.cam4.com/'+notID,'_blank');
 	};
 
+	
 	//*****************Costruttore*********************//
 	$scope.init = function(){
 		chrome.notifications.onButtonClicked.addListener(notificationBtnClick);

@@ -6,6 +6,18 @@ Simple Chrome App to watch online models on cam4.com
 Changelog
 ---------
 
+### v. 1.3.0
+
+* Little CSS bug fix
+* Little corrections to i18 for future translations
+* Library Update
+* Angular i18n removed in git
+* Removed eot, svg fonts: now the application should by smaller
+* Plus button will be disabled on void username
+* Added support to full links like http://www.cam4.com/model
+
+
+
 ### v. 1.2.0
 
 

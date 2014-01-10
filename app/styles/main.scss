@@ -12,7 +12,7 @@ $bootstrapPath: "sass-bootstrap/lib/";
 $grid-float-breakpoint: 0em;
 
 /*Importazione font awesome*/
-@import 'font-awesome/scss/font-awesome';
+@import 'fontAwesome/font-awesome';
 
 /*Import Animations */
 @import 'animate';
@@ -74,11 +74,13 @@ body {
     height: 0px;
     line-height: 14px;
     vertical-align: middle;
-    width: 0.75em;
+    width: 0.10em;
 }
 
 .elenco:hover{
-    background-color: #ffffaa;
+    background-color: rgba(255,255,0,0.35);
 }
 
-
+.marginLastElementRight{
+    margin-right: 10px;
+}
