@@ -3,18 +3,46 @@
 describe('Controller: userctrl', function () {
 
   // load the controller's module
-  beforeEach(module('contactListManager'));
+  beforeEach( function(){
+    module('contactListManager');
+    module( function( $provide ){
+      //$provide.value('chrome.storage.sync.get', function(){ dump('chrome.storage.sync.get called.'); });
+      //$provide.value('chrome.storage.sync.set', function(res){ dump('chrome.storage.sync.set called. Passed value:' + res.toString()); }); 
+      $provide.constant('chrome',{
+        storage: {
+          sync:{
+            set: function(res){ dump('chrome.storage.sync.set called. Passed value:' + res.toString()); },
+            get: function(){ dump('chrome.storage.sync.get called.'); }
+          }
+        }
+      });
+    });
+  });
 
   var MainCtrl,
-    scope;
+    scope, chrome;
 
   // Initialize the controller and a mock scope
-  beforeEach(inject(function ($controller, $rootScope) {
-    scope = $rootScope.$new();
-    MainCtrl = $controller('userctrl', {
-      $scope: scope
+  beforeEach( function(){
+    inject(function ($controller, $rootScope) {
+      scope = $rootScope.$new();
+      chrome = {
+        storage: {
+          sync:{
+            set: function(res){ dump('chrome.storage.sync.set called. Passed value:' + res.toString()); },
+            get: function(){ dump('chrome.storage.sync.get called.'); }
+          }
+        }
+      };
+      MainCtrl = $controller('userctrl', {
+        $scope: scope,
+        chrome: chrome
+      });
     });
-  }));
+  });
+
+
+
 
   it('L\'array items dovrebbe essere 0', function () {
     expect(scope.items.length).toBe(0);
@@ -35,11 +63,14 @@ describe('Controller: userctrl', function () {
         online: true
       }
     ];
+
     expect( scope.getIndexItem('cica')).toEqual(0);
     expect( scope.getIndexItem('c1c2c3c4c5')).toEqual(2);
     expect( scope.getIndexItem('nonEsistente')).toEqual(-1);
 
   });
+
+  
 /*
   it('Verifico l\'inserimento degli username', function(){
 

@@ -6,6 +6,11 @@ Simple Chrome App to watch online models on cam4.com
 Changelog
 ---------
 
+### v. 1.3.1
+
+* CSS Bug Fix: buttons now are centered, switched to ttf font for windows woff font rendering problem.
+* Angular update
+
 ### v. 1.3.0
 
 * Little CSS bug fix
