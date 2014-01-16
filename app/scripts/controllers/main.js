@@ -19,7 +19,8 @@ angular.module('contactListManager')
 	$scope.online = navigator.onLine;
 	$scope.newItem = {
 		nome: '',
-		online: false
+		online: false,
+		invalid: false
 	};
 	$scope.viewOnline= false;
 	$scope.popup = false;
@@ -131,13 +132,17 @@ angular.module('contactListManager')
 			if($scope.online){
 				(function f(i){
 					$http.get('http://www.cam4.com/direct?room='+$scope.items[i].nome).success(function(data) {
-						$log.debug($scope.items[i]);
+						$log.debug(data);
 						if(data.substring(0,7) === 'rtmp://'){
 							if($scope.items[i].online === false){
 								notifyUserOnline($scope.items[i].nome);
 							}
 							$scope.items[i].online = true;
 							$log.debug($scope.items[i].nome + ' è online');
+						}
+						else if(data.substring(0,7) === 'invalid'){
+							$scope.items[i].online = false;
+							$scope.items[i].invalid = true;
 						}
 						else{
 							$log.debug($scope.items[i].nome +' è offline');
@@ -195,9 +200,10 @@ angular.module('contactListManager')
 		window.open('http://www.cam4.com/'+notID,'_blank');
 	};
 
-	
+
 	//*****************Costruttore*********************//
 	$scope.init = function(){
+		$scope.addCollapsed = true;
 		chrome.notifications.onButtonClicked.addListener(notificationBtnClick);
 		chrome.storage.sync.get(['popup','viewOnline'],function(res){
 			if( res !== null){

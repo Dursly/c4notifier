@@ -75,5 +75,9 @@
 	"clickToOpen":{
 		"message":"Click per aprire la pagina del contatto",
 		"description":""
+	},
+	"contactInvalid":{
+		"message":"Il contatto non esiste",
+		"description":""
 	}
 }

@@ -1,16 +1,16 @@
 {
   "name": "angular-animate",
-  "version": "1.2.9-build.2122+sha.34fee06",
+  "version": "1.2.10-build.2145+sha.6a9ccac",
   "main": "./angular-animate.js",
   "dependencies": {
-    "angular": "1.2.9-build.2122+sha.34fee06"
+    "angular": "1.2.10-build.2145+sha.6a9ccac"
   },
   "homepage": "https://github.com/angular/bower-angular-animate",
-  "_release": "1.2.9-build.2122+sha.34fee06",
+  "_release": "1.2.10-build.2145+sha.6a9ccac",
   "_resolution": {
     "type": "version",
-    "tag": "v1.2.9-build.2122+sha.34fee06",
-    "commit": "5fde7c6a00e4ad9051a076dd8ce451a53eb2d5f6"
+    "tag": "v1.2.10-build.2145+sha.6a9ccac",
+    "commit": "db40ddb911ba10892e1906563f314b46ea04c2a3"
   },
   "_source": "git://github.com/angular/bower-angular-animate.git",
   "_target": ">=1.2.6",

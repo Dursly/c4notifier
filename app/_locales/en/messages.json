@@ -74,5 +74,9 @@
 	"clickToOpen":{
 		"message":"Click open contact page in a new tab",
 		"description":""
+	},
+	"contactInvalid":{
+		"message":"The contact does not exist",
+		"description":""
 	}
 }

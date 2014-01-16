@@ -70,7 +70,6 @@ describe('Controller: userctrl', function () {
 
   });
 
-  
 /*
   it('Verifico l\'inserimento degli username', function(){
 

@@ -32,18 +32,19 @@
             </a>
           </li>
          </ul>
+         
         </nav>
 
 <!-- End of NavBar -->
 
-        <div>
-        </div>         
+
           <div style="vertical-align:middle;"  class="animate row elenco" ng-repeat="model in items | orderBy:'nome' | mostraUserOnline:viewOnline" ng-class="{'sfondoverde': model.online == true}">
                
                <div style="vertical-align:middle; " class="col-xs-9 col-sm-10 col-md-10 col-lg-10">
                  <a style="margin-bottom: 0px;" ng-class="{active: model.online}" ng-href="http://www.cam4.com/{{model.nome}}"target="_blank">
                      <i ng-if="model.online" class="fa fa-video-camera" tooltip-popup-delay='1000' tooltip="{{ 'contactOnline' | translate }}" tooltip-placement="right"> </i>
-                     <i ng-if="model.online == false" class="fa fa-square-o" tooltip-popup-delay='1000' tooltip="{{ 'contactOffline' | translate }}" tooltip-placement="right"> </i>
+                     <i ng-if="((model.online === false) && (model.invalid !== true))" class="fa fa-square-o" tooltip-popup-delay='1000' tooltip="{{ 'contactOffline' | translate }}" tooltip-placement="right"> </i>
+                     <i ng-if="model.invalid" class="fa fa-times-circle-o" tooltip-popup-delay='1000' tooltip="{{ 'contactInvalid' | translate }}" tooltip-placement="right"> </i>
                      {{model.nome}}
                  </a>
                </div>
