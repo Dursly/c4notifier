@@ -1,0 +1,1 @@
+module tooltip-html-unsafe-popup { export var html =  '<div class="tooltip {{placement}}" ng-class="{ in: isOpen(), fade: animation() }">  <div class="tooltip-arrow"></div>  <div class="tooltip-inner" ng-bind-html-unsafe="content"></div></div>' } 

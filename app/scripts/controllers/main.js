@@ -94,8 +94,10 @@ angular.module('contactListManager')
 			},function(){});
 			$window.setTimeout(function(){chrome.notifications.clear(user,function(){});}, $scope.notifyShowTime);
 			chrome.notifications.onClicked.addListener(function( notificationId){
-				$window.open('http://www.cam4.com/'+notificationId,'_blank');
 				chrome.notifications.clear(user,function(){});
+				//$window.open('http://www.cam4.com/'+notificationId,'_blank');
+				chrome.app.tabs.create({'url':'http://www.cam4.com/'+notificationId});
+				
 			});
 		}
 	};
@@ -113,14 +115,35 @@ angular.module('contactListManager')
 
 	var saveUsers = function(){
 		chrome.storage.sync.set({users: getUsersArray()});
+		/*chrome.storage.sync.set({usersList: angular.toJSON($scope.users)});*/
 	};
 
-	var loadUsers = function(){
+	var loadConfig = function(){
+		$scope.addCollapsed = true;
+		chrome.notifications.onButtonClicked.addListener(notificationBtnClick);
+		chrome.storage.sync.get(['popup','viewOnline'],function(res){
+			if( res !== null){
+				if(res.popup !== null){
+					$scope.popup = res.popup;
+				}
+				if(res.viewOnline !== null){
+					$scope.viewOnline = res.viewOnline;
+				}
+			}
+		});
 		$scope.items = [];
+		/*
+		chrome.storage.sync.get('usersList',function(res){
+			$log.debug('Carico la lista utenti con il formato JSON');			
+			$log.debug(res);
+			$scope.users = angular.fromJSON(res);			
+		});
+		*/
 		chrome.storage.sync.get('users',function(res){
 			$log.debug(res);
 			while(res.users.length){
 				$scope.items.push({nome:res.users.pop(), online: false});
+
 			}
 			$scope.refresh();
 		});
@@ -203,24 +226,9 @@ angular.module('contactListManager')
 
 	//*****************Costruttore*********************//
 	$scope.init = function(){
-		$scope.addCollapsed = true;
-		chrome.notifications.onButtonClicked.addListener(notificationBtnClick);
-		chrome.storage.sync.get(['popup','viewOnline'],function(res){
-			if( res !== null){
-				if(res.popup !== null){
-					$scope.popup = res.popup;
-				}
-				if(res.viewOnline !== null){
-					$scope.viewOnline = res.viewOnline;
-				}
-			}
-		});
-
-		loadUsers();
-
+		loadConfig();
 		$window.addEventListener('online',  changeOnLineStatus);
 		$window.addEventListener('offline',  changeOnLineStatus);
 		$log.debug('Init completato!');
 	};
 }]);
-

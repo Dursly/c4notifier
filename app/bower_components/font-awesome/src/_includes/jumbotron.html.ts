@@ -1,0 +1,1 @@
+module jumbotron { export var html =  '<div class="jumbotron jumbotron-ad hidden-print">  <div class="container">    <h1>{{ jumbotron_h1 }}</h1>    <p>{{ jumbotron_p }}</p>  </div></div>' } 

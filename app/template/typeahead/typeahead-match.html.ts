@@ -1,0 +1,1 @@
+module typeahead-match { export var html =  '<a tabindex="-1" bind-html-unsafe="match.label | typeaheadHighlight:query"></a>' } 

@@ -1,0 +1,1 @@
+module backdrop { export var html =  '<div class="modal-backdrop fade {{modal.backdropClass}}" ng-class="{in: animate}" ng-style="{\'z-index\': 1040 + index*10}"></div>' } 

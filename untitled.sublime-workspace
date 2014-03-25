@@ -1,0 +1,666 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"le",
+				"length"
+			],
+			[
+				"patter",
+				"patternURL"
+			],
+			[
+				"marig",
+				"margin-right"
+			],
+			[
+				"angula",
+				"angular-animate"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"notificatio",
+				"notifications"
+			],
+			[
+				"mos",
+				"mostraUserOnlineFilter"
+			],
+			[
+				"v",
+				"viewOnline"
+			],
+			[
+				"bower",
+				"bower_components"
+			],
+			[
+				"mari",
+				"margin-top"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"contact",
+				"contactListManager"
+			],
+			[
+				"noti",
+				"notifyToolTip"
+			],
+			[
+				"log",
+				"logProvider"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"an",
+				"angular"
+			],
+			[
+				"s",
+				"script"
+			],
+			[
+				"j",
+				"jquery"
+			],
+			[
+				"jq",
+				"jquery-ui"
+			],
+			[
+				"mode",
+				"modelsInStorage"
+			],
+			[
+				"for",
+				"form	Tag"
+			],
+			[
+				"bo",
+				"bower_components"
+			],
+			[
+				"ba",
+				"background-repeat"
+			],
+			[
+				"b",
+				"bower_components"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"margin",
+				"margin-right"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/scripts/controllers/main.js",
+			"settings":
+			{
+				"buffer_size": 6057,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 12854,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/grunt-build.sublime-build",
+	"command_palette":
+	{
+		"height": 285.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/leonardo/c4notifier/app/scripts/greet.ts",
+		"/home/leonardo/c4notifier/package.json",
+		"/home/leonardo/rails/PersonalSite/Gemfile",
+		"/media/leonardo/Dati/android-studio/bin/idea.properties",
+		"/home/leonardo/marco/program09.java",
+		"/home/leonardo/marco/program08.java",
+		"/home/leonardo/playlist.pls",
+		"/home/leonardo/marco/provaInput.java",
+		"/home/leonardo/marco/prova3.java",
+		"/home/leonardo/marco/prova2.java",
+		"/home/leonardo/marco/prova1.java",
+		"/home/leonardo/marco/esempio8.java",
+		"/home/leonardo/marco/esempio9.java",
+		"/home/leonardo/c4notifier/Gruntfile.js",
+		"/home/leonardo/c4notifier/app/bower_components/font-awesome/scss/_path.scss",
+		"/home/leonardo/c4notifier/app/styles/fontAwesome/_path.scss",
+		"/home/leonardo/c4notifier/app/styles/fontAwesome/_stacked.scss",
+		"/home/leonardo/c4notifier/app/styles/fontAwesome/font-awesome.scss",
+		"/home/leonardo/c4notifier/app/styles/_bootstrap.scss",
+		"/home/leonardo/c4notifier/app/scripts/controllers/main.js",
+		"/home/leonardo/c4notifier/app/bower_components/sass-bootstrap/lib/_theme.scss",
+		"/home/leonardo/c4notifier/app/bower_components/sass-bootstrap/lib/_responsive-utilities.scss",
+		"/home/leonardo/c4notifier/app/bower_components/sass-bootstrap/lib/_normalize.scss",
+		"/home/leonardo/c4notifier/app/bower_components/sass-bootstrap/lib/_modals.scss",
+		"/home/leonardo/c4notifier/app/styles/_animate.scss",
+		"/home/leonardo/c4notifier/app/bower_components/sass-bootstrap/lib/_mixins.scss",
+		"/home/leonardo/c4notifier/app/bower_components/sass-bootstrap/lib/_variables.scss",
+		"/home/leonardo/c4notifier/app/styles/main.scss",
+		"/home/leonardo/ecogreenshop/www.ecogreenshop.it/wp-content/themes/viroshop/style.css",
+		"/home/leonardo/c4notifier/node_modules/grunt-bower-install/readme.md",
+		"/home/leonardo/c4notifier/c4notifier.zip",
+		"/home/leonardo/c4notifier/test/spec/controllers/main.js",
+		"/home/leonardo/ecogreenshop/lavoro 27 gennaio/template risparmio energetico.html",
+		"/home/leonardo/untitled.xml",
+		"/home/leonardo/c4notifier/README.md",
+		"/home/leonardo/ecogreenshop/www.ecogreenshop.it/wp-content/themes/viroshop/assets/js/jquery.selectBox.min.js",
+		"/home/leonardo/c4notifier/app/template/modal/backdrop.html",
+		"/home/leonardo/c4notifier/bower.json",
+		"/home/leonardo/c4notifier/app/index.html",
+		"/home/leonardo/c4notifier/karma.conf.js",
+		"/home/leonardo/prova.html",
+		"/home/leonardo/.config/sublime-text-3/Packages/User/Emmet.sublime-settings",
+		"/home/leonardo/c4notifier/app/_locales/it/messages.json",
+		"/home/leonardo/c4notifier/app/_locales/en/messages.json",
+		"/home/leonardo/c4notifier/app/views/main.html",
+		"/home/leonardo/c4notifier/app/scripts/app.js",
+		"/home/leonardo/c4notifier/app/manifest.json",
+		"/home/leonardo/c4notifier/test/spec/filters/app.js",
+		"/home/leonardo/c4notifier/app/bower_components/font-awesome/scss/_core.scss",
+		"/home/leonardo/c4notifier/app/bower_components/font-awesome/scss/_extras.scss",
+		"/home/leonardo/c4notifier/app/bower_components/font-awesome/scss/_variables.scss",
+		"/home/leonardo/c4notifier/app/bower_components/font-awesome/scss/font-awesome.scss",
+		"/home/leonardo/c4notifier/app/bower_components/font-awesome/scss/_mixins.scss",
+		"/home/leonardo/c4notifier/app/bower_components/font-awesome/scss/_icons.scss",
+		"/home/leonardo/convert.sh",
+		"/home/leonardo/c4notifier/node_modules/grunt/node_modules/exit/test/fixtures/10-stderr.txt",
+		"/home/leonardo/c4notifier/node_modules/grunt/node_modules/exit/test/fixtures/100-stderr.txt",
+		"/home/leonardo/c4notifier/README.md.orig",
+		"/home/leonardo/c4notifier/.gitignore",
+		"/home/leonardo/c4notifier/app/bower_components/sass-bootstrap/lib/_buttons.scss",
+		"/home/leonardo/c4notifier/app/styles/animate.css",
+		"/home/leonardo/provaAnimate/bower.json",
+		"/home/leonardo/provaAnimate/app/scripts/app.js",
+		"/home/leonardo/c4notifier/LICENSE",
+		"/home/leonardo/mame.ini",
+		"/home/leonardo/c4notifier/app/bower_components/sass-bootstrap/lib/_glyphicons.scss",
+		"/home/leonardo/c4notifier/app/bower_components/sass-bootstrap/lib/bootstrap.scss",
+		"/home/leonardo/c4notifier/app/bower_components/sass-bootstrap/lib/_print.scss",
+		"/home/leonardo/c4notifier/app/bower_components/sass-bootstrap/lib/_media.scss",
+		"/home/leonardo/c4notifier/app/bower_components/angular-animate/.bower.json",
+		"/home/leonardo/c4notifier/app/bower_components/angular-animate/README.md",
+		"/home/leonardo/c4notifier/app/bower_components/angular-animate/bower.json",
+		"/home/leonardo/c4notifier/app/bower_components/angular-animate/angular-animate.js",
+		"/home/leonardo/cam4/Gruntfile.js",
+		"/home/leonardo/cam4/app/styles/main.scss",
+		"/home/leonardo/cam4/app/partials/confermaRemove.html",
+		"/home/leonardo/cam4/app/scripts/controllers/main.js",
+		"/home/leonardo/cam4/app/views/main.html",
+		"/home/leonardo/cam4/test/spec/filters/app.js",
+		"/home/leonardo/cam4/app/index.html",
+		"/home/leonardo/cam4/app/background.js",
+		"/home/leonardo/cam4/app/manifest.json",
+		"/home/leonardo/cam4/app/scripts/app.js",
+		"/home/leonardo/cam4/app/scripts/ui-templates.js",
+		"/home/leonardo/cam4/package.json",
+		"/home/leonardo/cam4/app/bower_components/sass-bootstrap/lib/_navbar.scss",
+		"/home/leonardo/cam4/test/spec/controllers/main.js",
+		"/home/leonardo/cam4/app/_locales/en/messages.json",
+		"/home/leonardo/cam4/app/_locales/it/messages.json",
+		"/home/leonardo/cam4/.jshintrc",
+		"/home/leonardo/cam4old/app/styles/main.scss",
+		"/home/leonardo/cam4/bower.json",
+		"/home/leonardo/cam4old/Gruntfile.js",
+		"/home/leonardo/cam4old/package.json",
+		"/home/leonardo/cam4/karma.conf.js",
+		"/home/leonardo/cam4old/app/main.js",
+		"/home/leonardo/cam4/test/.jshintrc",
+		"/home/leonardo/cam4old/bower.json",
+		"/home/leonardo/cam4old/app/index.html",
+		"/home/leonardo/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/leonardo/cam4/app/.htaccess",
+		"/home/leonardo/cam4/app/favicon.ico",
+		"/home/leonardo/cam4/app/404.html",
+		"/home/leonardo/cam4/node_modules/grunt-contrib-uglify/node_modules/uglify-js/lib/mozilla-ast.js",
+		"/home/leonardo/cam4/node_modules/grunt-contrib-imagemin/node_modules/gifsicle/node_modules/bin-wrapper/node_modules/mout/lang/isNull.js",
+		"/home/leonardo/cam4/app/bower_components/angular-sanitize/bower.json",
+		"/home/leonardo/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/leonardo/cam4/.gitattributes",
+		"/home/leonardo/cam4-1.0.1/untitled.sublime-project",
+		"/home/leonardo/.config/sublime-text-3/Packages/User/grunt-build.sublime-build",
+		"/home/leonardo/cam4-1.0.1/app/index.html",
+		"/home/leonardo/cam4-1.0.1/app/bower_components/angular-mocks/angular-mocks.js",
+		"/home/leonardo/x/untitled.sublime-project",
+		"/home/leonardo/cam4/app/main.js",
+		"/home/leonardo/cam4-1.0.1/Gruntfile.js",
+		"/home/leonardo/cam4/app/scripts/main.js",
+		"/home/leonardo/cam4-1.0.1/bower.json",
+		"/home/leonardo/cam4/app/bower_components/sass-bootstrap/lib/_variables.scss",
+		"/home/leonardo/cam4/app/styles/modal-fix.css",
+		"/home/leonardo/cam4/app/styles/animate.scss",
+		"/home/leonardo/cam4/index non funzionante.html",
+		"/home/leonardo/cam4/app/confermaRemove.html",
+		"/home/leonardo/cam4/dist/main.js",
+		"/home/leonardo/cam4/.tmp/ui-templates.js",
+		"/home/leonardo/cam4/app/styles/variables .scss",
+		"/home/leonardo/cam4Notifier/app/index.html",
+		"/home/leonardo/cam4Notifier/app/styles/main.less",
+		"/home/leonardo/cam4/dist/scripts/eab06230.main.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"watch",
+			"app",
+			"fonts/",
+			".svg",
+			"font",
+			"svg",
+			"woff",
+			"bower-",
+			"bowerinstall",
+			"bower-install",
+			"bower",
+			"</span>",
+			"<span style=\"color: #333333; font-family: Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif; font-size: small;\"><span style=\"line-height: 19px;\">",
+			"center",
+			"tmp",
+			"$('selectBox",
+			"selectBox",
+			"top",
+			"load",
+			"bower",
+			"main",
+			"bower",
+			"chrome",
+			"add",
+			"fonts",
+			"font",
+			"200ms",
+			"30px",
+			"animate-",
+			"30px",
+			"600ms",
+			"animate",
+			"animate-",
+			"my-animation",
+			"html2",
+			"{$bootstrapPath}",
+			"#{$bootstrapPath}#",
+			"'",
+			"bootstrapPath",
+			"\\\"(.*?)\\\"",
+			"\"[^\"]*\"",
+			"\"[^\"]*\"!",
+			"\\\"$1\\\"",
+			"\"$1\"",
+			"(\"$1\")",
+			"\\\".\\\"",
+			"\".\"",
+			"\"*\"",
+			"time",
+			"noti",
+			"refres",
+			"Mesag",
+			"mesage",
+			"icon",
+			"notifi",
+			">=1.2.6",
+			">    ",
+			"lg",
+			"filtro",
+			"spec",
+			"bower",
+			"glyphicons-halflings-regular.ttf",
+			"glyphicons-halflings-regular.woff",
+			"bower_components/sass",
+			"bower-i",
+			"modern",
+			"bower-install",
+			"grunt-bower-install",
+			"bower-install",
+			"~",
+			"modern",
+			"moder",
+			"copy",
+			"~",
+			"test",
+			"$scope",
+			"local",
+			"locale",
+			"Locale",
+			"CAM4",
+			"\"\"",
+			"return",
+			"tool",
+			"partials",
+			"~",
+			"copy",
+			"tmp",
+			"copy",
+			"~",
+			"console.log",
+			"bower",
+			"bootstrap",
+			"@([a-zA-Z0-9_-]+)",
+			"console.log",
+			"name",
+			"ugl",
+			"\";\n",
+			"theme",
+			"~",
+			"camWatcher",
+			"'\n",
+			"strict",
+			"slim",
+			"load",
+			";\n",
+			"@gray-lighter",
+			"~",
+			"copy",
+			"fn",
+			"navba",
+			"pop",
+			"h1",
+			"title",
+			"black",
+			"server",
+			"recess",
+			"test",
+			"~",
+			"require",
+			"imagemin",
+			"css",
+			"fonts",
+			"recess",
+			"cssmin",
+			"compass:server",
+			"cssmin",
+			"dist",
+			"requirej"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"left",
+			"$AnimationTime",
+			"$heightRowAnimation",
+			"animate.ng-",
+			"$heightRowAnimation",
+			"$AnimationTime",
+			"animate.ng-",
+			"animate",
+			"sass-bootstrap/lib",
+			"{$bootstrapPath}/",
+			"\"",
+			"$bootstrapPath",
+			"'#{bootstrapPath}#$1'",
+			"\"#{bootstrapPath}#$1\"",
+			"\"$1\"",
+			"$1$2$3",
+			"$1$2",
+			"$1",
+			"\"baubau$1\"",
+			"~1.2.6",
+			"mostraUserOnlineFilter",
+			">=",
+			"sync",
+			"\"x\"",
+			">=",
+			"$log.debug",
+			"\\$$1",
+			"$log.info",
+			"nome",
+			">=",
+			"recess",
+			">=",
+			"",
+			"a: '../",
+			">="
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/scripts/controllers/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6057,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6057,
+								6057
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3312.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Gruntfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12854,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11060,
+								11060
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7326.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 61.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "untitled.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"main",
+				"app/scripts/controllers/main.js"
+			],
+			[
+				"inde",
+				"app/index.html"
+			],
+			[
+				"",
+				".gitattributes"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 208.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

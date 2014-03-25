@@ -1,0 +1,1 @@
+module tabset-titles { export var html =  '<ul class="nav {{type && \'nav-\' + type}}" ng-class="{\'nav-stacked\': vertical, \'nav-justified\': justified}"></ul>' } 

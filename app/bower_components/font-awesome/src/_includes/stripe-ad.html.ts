@@ -1,0 +1,1 @@
+module stripe-ad { export var html =  '<section class="hidden-print">  <div class="stripe-ad">    {% include ads/carbon-light-horizontal.html %}    {{ stripe_ad_content }}  </div></section>' } 

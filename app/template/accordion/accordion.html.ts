@@ -1,0 +1,1 @@
+module accordion { export var html =  '<div class="panel-group" ng-transclude></div>' } 

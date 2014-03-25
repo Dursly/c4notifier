@@ -1,10 +1,17 @@
-C4notifier
-==========
+#C4notifier [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 Simple Chrome App to watch online models on cam4.com
 
-Changelog
----------
+
+##Changelog
+
+### v. 1.3.3
+
+* Resolved multi open tab issue
+* Update Angularjs to 1.2.15
+* Switched again to woff font format
+And now I'm going to work for 2.0.0! Any request?
+
 
 ### v. 1.3.2
 

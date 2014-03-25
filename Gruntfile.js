@@ -34,6 +34,10 @@ module.exports = function (grunt) {
           livereload: true
         }
       },
+      typescript:{
+        files: '**/*.ts',
+        tasks: ['typescript']
+      },
       jsTest: {
         files: ['test/spec/{,*/}*.js'],
         tasks: ['newer:jshint:test', 'karma']
@@ -141,8 +145,8 @@ module.exports = function (grunt) {
     },
 
     // Automatically inject Bower components into the app
-    'bower-install': {
-      target: {
+    'bowerInstall': {
+      app: {
         src: '<%= yeoman.app %>/index.html',
         ignorePath: '<%= yeoman.app %>/',
         exclude: [
@@ -292,17 +296,17 @@ module.exports = function (grunt) {
             //'bower_components/sass-bootstrap/fonts/*.*',
             'partials/{,*/}*.html',
             'images/{,*/}*.{webp}',
-            'fonts/*'
+            //'fonts/*'
           ]
-        },/*
+        },
         {
           expand: true,
           cwd: '<%= yeoman.app %>/bower_components/font-awesome/fonts',
           dest: '<%= yeoman.dist %>/fonts',
           src: [
-            '*'
+            '*.woff'
           ]
-        },*//* GlyphIcons no more required!
+        },/* GlyphIcons no more required!
         {
           expand: true,
           cwd: '<%= yeoman.app %>/bower_components/sass-bootstrap/fonts/',
@@ -431,12 +435,38 @@ module.exports = function (grunt) {
           {cwd: 'dist/', expand: true, src: ['**']}
         ]
       }
+    },
+    typescript: {
+      base: {
+        src: ['*.ts'],
+        dest: '',
+        options: {
+          target: 'es5' //or es3
+        }
+      }
+    },
+
+    uncss: {
+      dist: {
+        stylesheets: ['.tmp/concat/styles/main.css'],
+        csspath: '.tmp/concat/styles',
+        files: {
+          '.tmp/concat/styles/main.css': [
+            '<%= yeoman.app %>/index.html',
+            '<%= yeoman.app %>/views/main.html',
+            '<%= yeoman.app %>/template/modal/window.html',
+            '<%= yeoman.app %>/template/modal/backdrop.html'
+          ]
+        }
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-bower-install');
   grunt.loadNpmTasks('grunt-html2js');
   grunt.loadNpmTasks('grunt-contrib-compress');
+  grunt.loadNpmTasks('grunt-uncss');
+  grunt.loadNpmTasks('grunt-ts');
 
   grunt.registerTask('serve', function (target) {
     if (target === 'dist') {
@@ -445,7 +475,9 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
-      'bower-install',
+      'bowerInstall',
+      'typescript',
+      //'ts:dev',
       //'html2js',
       'concurrent:server',
       'autoprefixer',
@@ -469,16 +501,18 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
-    'bower-install',
+    'bowerInstall',
+    //'ts:build',
     //'html2js',
     'useminPrepare',
     'concurrent:dist',
     'autoprefixer',
     'concat',
+    //'uncss', 
     'ngmin',
     'copy:dist',
-    'modernizr',
-    'cdnify',
+    //'modernizr',
+    //'cdnify',
     'cssmin',
     'uglify',
     'rev',
