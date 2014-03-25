@@ -45,4 +45,4 @@ And now I'm going to work for 2.0.0! Any request?
 * Libraries updated
 
 
-You can found it on [Chrome Store](https://chrome.google.com/webstore/detail/c4notifier/hncekpdklkbhjafeglflhafaibfgcjpj)
+You can find it on [Chrome Store](https://chrome.google.com/webstore/detail/c4notifier/hncekpdklkbhjafeglflhafaibfgcjpj)
