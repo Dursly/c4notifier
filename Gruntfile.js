@@ -34,10 +34,6 @@ module.exports = function (grunt) {
           livereload: true
         }
       },
-      typescript:{
-        files: '**/*.ts',
-        tasks: ['typescript']
-      },
       jsTest: {
         files: ['test/spec/{,*/}*.js'],
         tasks: ['newer:jshint:test', 'karma']
@@ -436,15 +432,7 @@ module.exports = function (grunt) {
         ]
       }
     },
-    typescript: {
-      base: {
-        src: ['*.ts'],
-        dest: '',
-        options: {
-          target: 'es5' //or es3
-        }
-      }
-    },
+    
 
     uncss: {
       dist: {
@@ -466,7 +454,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-html2js');
   grunt.loadNpmTasks('grunt-contrib-compress');
   grunt.loadNpmTasks('grunt-uncss');
-  grunt.loadNpmTasks('grunt-ts');
 
   grunt.registerTask('serve', function (target) {
     if (target === 'dist') {
@@ -476,9 +463,6 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'bowerInstall',
-      'typescript',
-      //'ts:dev',
-      //'html2js',
       'concurrent:server',
       'autoprefixer',
       'connect:livereload',

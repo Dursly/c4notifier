@@ -5,6 +5,10 @@ Simple Chrome App to watch online models on cam4.com
 
 ##Changelog
 
+### v. 1.3.4
+
+* Removed button and fixed issue of notifications
+
 ### v. 1.3.3
 
 * Resolved multi open tab issue

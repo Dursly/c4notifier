@@ -84,21 +84,18 @@ angular.module('contactListManager')
 				type: 'basic',
 				title: 'C4Notifier',
 				message: user + chrome.i18n.getMessage('eonline'),
-				iconUrl: 'icon.png',
+				iconUrl: 'icon.png'/*,
 				buttons: [
 					{
 						title:'Apri',
 						iconUrl:'icon.png'
 					}
-				]
-			},function(){});
-			$window.setTimeout(function(){chrome.notifications.clear(user,function(){});}, $scope.notifyShowTime);
-			chrome.notifications.onClicked.addListener(function( notificationId){
-				chrome.notifications.clear(user,function(){});
-				//$window.open('http://www.cam4.com/'+notificationId,'_blank');
-				chrome.app.tabs.create({'url':'http://www.cam4.com/'+notificationId});
-				
+				]*/
+			},function(notificationName){
+				$window.setTimeout(function(){chrome.notifications.clear(notificationName,function(){});}, $scope.notifyShowTime);
 			});
+			
+
 		}
 	};
 
@@ -230,5 +227,11 @@ angular.module('contactListManager')
 		$window.addEventListener('online',  changeOnLineStatus);
 		$window.addEventListener('offline',  changeOnLineStatus);
 		$log.debug('Init completato!');
+		chrome.notifications.onClicked.addListener(function( notificationId){
+			$window.open('http://www.cam4.com/'+notificationId,'_blank');
+			$log.debug('Notification Clicked: '+ notificationId);
+			chrome.notifications.clear(notificationId,function(){});
+		});
+
 	};
 }]);
