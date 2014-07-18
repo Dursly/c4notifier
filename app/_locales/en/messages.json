@@ -78,5 +78,21 @@
 	"contactInvalid":{
 		"message":"The contact does not exist",
 		"description":""
+	},
+	"addUser":{
+		"message":"Add new Contact",
+		"description":""
+	},
+	"labelAggiungiUtente":{
+		"message":"Write down the name or the link of the contact",
+		"description":""
+	},
+	"aggiungi":{
+		"message":"Add",
+		"description":""
+	},
+	"cerca":{
+		"message":"Find",
+		"description":""
 	}
 }

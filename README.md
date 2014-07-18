@@ -5,6 +5,22 @@ Simple Chrome App to watch online models on cam4.com
 
 ##Changelog
 
+### v. 1.4.5
+
+* Added bell notification sound
+* Added cancel icon in search field
+* Updated JS libraries and icons
+
+### v. 1.4.0
+
+* Added search
+* Modal to add new models
+
+### v. 1.3.5
+
+* JS libraries upgraded
+* Removed "tabs" permission in manifest
+
 ### v. 1.3.4
 
 * Removed button and fixed issue of notifications

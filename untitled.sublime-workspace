@@ -119,7 +119,63 @@
 			"file": "app/scripts/controllers/main.js",
 			"settings":
 			{
-				"buffer_size": 6238,
+				"buffer_size": 6787,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/_locales/it/messages.json",
+			"settings":
+			{
+				"buffer_size": 1925,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/main.html",
+			"settings":
+			{
+				"buffer_size": 3840,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/main.scss",
+			"settings":
+			{
+				"buffer_size": 2300,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 1339,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/manifest.json",
+			"settings":
+			{
+				"buffer_size": 330,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/partials/addContact.html",
+			"settings":
+			{
+				"buffer_size": 818,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "bower.json",
+			"settings":
+			{
+				"buffer_size": 413,
 				"line_ending": "Unix"
 			}
 		},
@@ -127,15 +183,15 @@
 			"file": "app/scripts/app.js",
 			"settings":
 			{
-				"buffer_size": 855,
+				"buffer_size": 1396,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Gruntfile.js",
+			"file": "app/background.js",
 			"settings":
 			{
-				"buffer_size": 12709,
+				"buffer_size": 208,
 				"line_ending": "Unix"
 			}
 		}
@@ -191,6 +247,18 @@
 	},
 	"file_history":
 	[
+		"/home/leonardo/c4notifier/app/_locales/en/messages.json",
+		"/home/leonardo/c4notifier/Gruntfile.js",
+		"/home/leonardo/c4notifier/app/index.html",
+		"/home/leonardo/c4notifier/.bowerrc",
+		"/home/leonardo/c4notifier/app/styles/main.scss",
+		"/home/leonardo/c4notifier/app/_locales/it/messages.json",
+		"/home/leonardo/c4notifier/app/partials/addContact.html",
+		"/home/leonardo/c4notifier/app/partials/confermaRemove.html",
+		"/home/leonardo/c4notifier/README.md",
+		"/home/leonardo/c4notifier/app/manifest.json",
+		"/home/leonardo/c4notifier/app/prova.html",
+		"/home/leonardo/c4notifier/app/partials/confermaRemove.html.ts",
 		"/home/leonardo/c4notifier/app/scripts/greet.ts",
 		"/home/leonardo/c4notifier/package.json",
 		"/home/leonardo/rails/PersonalSite/Gemfile",
@@ -204,7 +272,6 @@
 		"/home/leonardo/marco/prova1.java",
 		"/home/leonardo/marco/esempio8.java",
 		"/home/leonardo/marco/esempio9.java",
-		"/home/leonardo/c4notifier/Gruntfile.js",
 		"/home/leonardo/c4notifier/app/bower_components/font-awesome/scss/_path.scss",
 		"/home/leonardo/c4notifier/app/styles/fontAwesome/_path.scss",
 		"/home/leonardo/c4notifier/app/styles/fontAwesome/_stacked.scss",
@@ -218,26 +285,20 @@
 		"/home/leonardo/c4notifier/app/styles/_animate.scss",
 		"/home/leonardo/c4notifier/app/bower_components/sass-bootstrap/lib/_mixins.scss",
 		"/home/leonardo/c4notifier/app/bower_components/sass-bootstrap/lib/_variables.scss",
-		"/home/leonardo/c4notifier/app/styles/main.scss",
 		"/home/leonardo/ecogreenshop/www.ecogreenshop.it/wp-content/themes/viroshop/style.css",
 		"/home/leonardo/c4notifier/node_modules/grunt-bower-install/readme.md",
 		"/home/leonardo/c4notifier/c4notifier.zip",
 		"/home/leonardo/c4notifier/test/spec/controllers/main.js",
 		"/home/leonardo/ecogreenshop/lavoro 27 gennaio/template risparmio energetico.html",
 		"/home/leonardo/untitled.xml",
-		"/home/leonardo/c4notifier/README.md",
 		"/home/leonardo/ecogreenshop/www.ecogreenshop.it/wp-content/themes/viroshop/assets/js/jquery.selectBox.min.js",
 		"/home/leonardo/c4notifier/app/template/modal/backdrop.html",
 		"/home/leonardo/c4notifier/bower.json",
-		"/home/leonardo/c4notifier/app/index.html",
 		"/home/leonardo/c4notifier/karma.conf.js",
 		"/home/leonardo/prova.html",
 		"/home/leonardo/.config/sublime-text-3/Packages/User/Emmet.sublime-settings",
-		"/home/leonardo/c4notifier/app/_locales/it/messages.json",
-		"/home/leonardo/c4notifier/app/_locales/en/messages.json",
 		"/home/leonardo/c4notifier/app/views/main.html",
 		"/home/leonardo/c4notifier/app/scripts/app.js",
-		"/home/leonardo/c4notifier/app/manifest.json",
 		"/home/leonardo/c4notifier/test/spec/filters/app.js",
 		"/home/leonardo/c4notifier/app/bower_components/font-awesome/scss/_core.scss",
 		"/home/leonardo/c4notifier/app/bower_components/font-awesome/scss/_extras.scss",
@@ -313,12 +374,7 @@
 		"/home/leonardo/cam4/app/styles/animate.scss",
 		"/home/leonardo/cam4/index non funzionante.html",
 		"/home/leonardo/cam4/app/confermaRemove.html",
-		"/home/leonardo/cam4/dist/main.js",
-		"/home/leonardo/cam4/.tmp/ui-templates.js",
-		"/home/leonardo/cam4/app/styles/variables .scss",
-		"/home/leonardo/cam4Notifier/app/index.html",
-		"/home/leonardo/cam4Notifier/app/styles/main.less",
-		"/home/leonardo/cam4/dist/scripts/eab06230.main.js"
+		"/home/leonardo/cam4/dist/main.js"
 	],
 	"find":
 	{
@@ -336,6 +392,22 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"$interval",
+			"newItem",
+			"find.",
+			"modal",
+			"partials",
+			"conferma",
+			"addM",
+			"add",
+			"confermaRemove",
+			"modal",
+			"Modalremove",
+			"remove",
+			"typescript",
+			".ts",
+			"ts",
+			");\n",
 			"notif",
 			"watch",
 			"app",
@@ -447,23 +519,7 @@
 			"copy",
 			"fn",
 			"navba",
-			"pop",
-			"h1",
-			"title",
-			"black",
-			"server",
-			"recess",
-			"test",
-			"~",
-			"require",
-			"imagemin",
-			"css",
-			"fonts",
-			"recess",
-			"cssmin",
-			"compass:server",
-			"cssmin",
-			"dist"
+			"pop"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -517,7 +573,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 7,
 			"sheets":
 			[
 				{
@@ -526,15 +582,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6238,
+						"buffer_size": 6787,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2714,
-								2714
+								266,
+								266
 							]
 						],
 						"settings":
@@ -543,32 +599,149 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1350.0,
+						"translation.y": 3213.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/scripts/app.js",
+					"file": "app/_locales/it/messages.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 855,
+						"buffer_size": 1925,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								211,
-								211
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1224.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/main.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3840,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								385,
+								385
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/styles/main.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2300,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2266,
+								2266
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1902.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1339,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								217,
+								217
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/manifest.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 330,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -580,20 +753,80 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "Gruntfile.js",
+					"buffer": 6,
+					"file": "app/partials/addContact.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12709,
+						"buffer_size": 818,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8498,
-								8498
+								484,
+								484
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "bower.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 413,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								239,
+								239
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/scripts/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1396,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								945,
+								945
 							]
 						],
 						"settings":
@@ -603,10 +836,38 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2685.0,
+						"translation.y": 322.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/background.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 208,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
@@ -682,6 +943,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"",
+				"~/algoritmi-strutture/algoritmi e strutture.sublime-project"
+			]
 		],
 		"width": 380.0
 	},
@@ -700,7 +965,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 208.0,
+	"side_bar_width": 253.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

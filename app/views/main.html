@@ -1,18 +1,33 @@
     <div class="container" ng-controller="userctrl" ng-init="init()" ng-class="{'sfondoGrigio':!online}">
 <!-- nAVbAR -->
       <nav class="navbar navbar-default navbar-fixed-top">
-          <form name="userform" class="navbar-form navbar-left" ng-submit="addModel()">
-                  <input tooltip-popup-delay='1000' tooltip="{{ 'inputToolTip' | translate }}" tooltip-placement="bottom" name="name"  placeholder="{{ 'inputPlaceHolder' | translate }}" style="display:inline-block; width:auto; " ng-required="true" type="text" ng-model="newItem.nome" size="20" class="form-control" required>
-                  <input type="submit" style="height: 0px; width: 0px; border: none; padding: 0px;" hidefocus="true">
-                  <a class="btn" ng-click="addModel()" ng-disabled="userform.$invalid"><i tooltip-popup-delay='1000' tooltip="{{ 'plusToolTip' | translate }}" tooltip-placement="bottom" class="fa fa-plus" > </i></a>
-                  </form>
+          <ul class=" nav navbar-nav navbar-left ">
+            <li>
+              <div class="left-inner-addon navbar-left">
+                
+                <i id="leftI" class="fa fa-search"></i>
+                
+                <input placeholder="{{ 'cerca' | translate }}"  ng-model="find" size="20" class="form-control">
+                
+                
+              </div>
+              <a id="rightI" ng-click=" setFindNull() " ng-if="find != '' ">
+                  <i    class="fa fa-times-circle"></i>
+                </a>
+            </li>
+            <li>  
+                  <a class="btn" ng-click="modalAddUser()" >
+                    <i tooltip-popup-delay='1000' tooltip="{{ 'plusToolTip' | translate }}" tooltip-placement="bottom" class="fa fa-plus" > </i>
+                  </a>
+            </li>
+          </ul>
 
 
          <ul class=" nav navbar-nav navbar-right ">
           <li>
             <a class="btn" ng-click="changeViewOnline()">
               <span class="fa-stack fa-lg">
-                <i tooltip-popup-delay='1000' tooltip="{{viewOnline? ('mostraOnline'| translate):('mostraTutti'| translate)}}" tooltip-placement="bottom" ng-class="{'fa fa-check-circle-o fa-stack-1x':viewOnline, 'fa fa-circle-o fa-stack-1x':!viewOnline}"></i>
+                <i tooltip-popup-delay='1000' class="fa fa-stack-1x" tooltip="{{viewOnline? ('mostraOnline'| translate):('mostraTutti'| translate)}}" tooltip-placement="bottom" ng-class="{'fa-check-circle-o ':viewOnline, 'fa-circle-o ':!viewOnline}"></i>
              </span> 
             </a>
           </li>
@@ -37,8 +52,11 @@
 
 <!-- End of NavBar -->
 
-
-          <div style="vertical-align:middle;"  class="animate row elenco" ng-repeat="model in items | orderBy:'nome' | mostraUserOnline:viewOnline" ng-class="{'sfondoverde': model.online == true}">
+          
+          <div style="vertical-align:middle;"  
+            class="animate row elenco" 
+            ng-repeat="model in items |  filter:find | mostraUserOnline:viewOnline |orderBy:'nome'" 
+            ng-class="{'sfondoverde': model.online == true}">
                
                <div style="vertical-align:middle; " class="col-xs-9 col-sm-10 col-md-10 col-lg-10">
                  <a style="margin-bottom: 0px;" ng-class="{active: model.online}" ng-href="http://www.cam4.com/{{model.nome}}"target="_blank">
@@ -54,17 +72,5 @@
 
           </div>         
           <div>
-          <script type="text/ng-template" id="confermaRemove.html">
-          <div class="modal-header">
-              <button type="button" class="close" ng-click="cancel()" data-dismiss="modal" aria-hidden="true">&times;</button>
-              <h4 class="modal-title" id="myModalLabel">{{'removeUser' | translate}}</h4>
-          </div>
-          <div class="modal-body">
-             {{'removeUserMsg' | translate}} {{nome}}?
-          </div>
-          <div class="modal-footer">
-             <button type="button" class="btn btn-default" ng-click="cancel()" data-dismiss="modal">{{'annulla' | translate}}</button>
-             <button type="button" class="btn btn-primary" ng-click="remove()">{{'rimuovi' | translate}}</button>
-          </div>
-          </script>
+          
     </div>

@@ -14,6 +14,15 @@ angular.module('contactListManager')
 			$modalInstance.dismiss('cancel');
 		};
 	}])
+	.controller('ModalAddUserCtrl',['$scope','$modalInstance',function ($scope, $modalInstance){		
+		$scope.cancel = function(){
+			$modalInstance.dismiss('cancel');
+		};
+
+		$scope.modalAddModel = function(nome){
+		$modalInstance.close(nome);
+		};
+	}])
 	.controller('userctrl', ['$scope','$http','$log','$interval','$modal','$window',function ($scope, $http, $log, $interval,$modal,$window) {
 	$scope.items =[];
 	$scope.online = navigator.onLine;
@@ -22,11 +31,15 @@ angular.module('contactListManager')
 		online: false,
 		invalid: false
 	};
+	
+	$scope.find = '';
 	$scope.viewOnline= false;
 	$scope.popup = false;
 	$scope.refreshTime = 30000;
+	$scope.notifyShowTime = 10000;
 
 	$interval(function(){
+		
 		$scope.refresh();
 	},$scope.refreshTime);
 
@@ -76,10 +89,11 @@ angular.module('contactListManager')
 		saveUsers();
 	};
 
-	$scope.notifyShowTime = 10000;
+	var bellRing = new Audio('sounds/bell.ogg');
 
 	var notifyUserOnline = function(user){
 		if($scope.popup === true){
+			bellRing.play();
 			chrome.notifications.create(user,{
 				type: 'basic',
 				title: 'C4Notifier',
@@ -189,7 +203,7 @@ angular.module('contactListManager')
 	$scope.modalRequestRemoveModel = function(modelName){
 		$log.debug('modalRequestRemoveModel called!');
 		var modalInstance = $modal.open({
-			templateUrl: 'confermaRemove.html',
+			templateUrl: 'partials/confermaRemove.html',
 			controller: 'ModalRemoveCtrl',
 			resolve: {
 				contact: function () {
@@ -200,6 +214,20 @@ angular.module('contactListManager')
 
 		modalInstance.result.then(function (ind) {
 			$scope.removeModel(ind);
+		});
+	};
+
+	$scope.modalAddUser = function(){
+		$log.debug('Modal addUser called!');
+		var modalInstance = $modal.open({
+			templateUrl: 'partials/addContact.html',
+			controller: 'ModalAddUserCtrl'
+		});
+		modalInstance.result.then(function (i){
+			if(typeof i != 'undefined'){
+				$scope.newItem.nome = i;
+				$scope.addModel();
+			}
 		});
 	};
 
@@ -215,7 +243,13 @@ angular.module('contactListManager')
 			viewOnline: $scope.viewOnline
 		});
 	};
+
+	$scope.setFindNull = function(){
+		$scope.find = '';
+		console.log('Cancellato valore find');
+	};
 	
+
 	var notificationBtnClick = function(notID){
 		window.open('http://www.cam4.com/'+notID,'_blank');
 	};
@@ -224,6 +258,7 @@ angular.module('contactListManager')
 	//*****************Costruttore*********************//
 	$scope.init = function(){
 		loadConfig();
+		
 		$window.addEventListener('online',  changeOnLineStatus);
 		$window.addEventListener('offline',  changeOnLineStatus);
 		$log.debug('Init completato!');

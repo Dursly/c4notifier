@@ -141,12 +141,12 @@ module.exports = function (grunt) {
     },
 
     // Automatically inject Bower components into the app
-    'bowerInstall': {
-      app: {
+    wiredep: {
+      target: {
         src: '<%= yeoman.app %>/index.html',
         ignorePath: '<%= yeoman.app %>/',
         exclude: [
-          'bower_components/jquery/jquery.js',
+          'bower_components/jquery/dist/jquery.js',
           'bower_components/sass-bootstrap/dist/js/bootstrap.js',
           'bower_components/sass-bootstrap/dist/css/bootstrap.css'
         ]
@@ -285,7 +285,6 @@ module.exports = function (grunt) {
           dest: '<%= yeoman.dist %>',
           src: [
             '*.{ico,png,txt,js}',
-            '.htaccess',
             '*.html',
             'views/{,*/}*.html',
             'manifest.json',
@@ -334,6 +333,15 @@ module.exports = function (grunt) {
           dest: '<%= yeoman.dist %>/_locales',
           src: [
             '{,*/}*.json'
+          ]
+        },
+        {
+          expand: true,
+          dot: true,
+          cwd: '<%= yeoman.app %>/sounds',
+          dest: '<%= yeoman.dist %>/sounds',
+          src: [
+            '{,*/}*.{mp3,ogg,flac,m4a}'
           ]
         }]
       },
@@ -450,7 +458,7 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-bower-install');
+  grunt.loadNpmTasks('grunt-wiredep');
   grunt.loadNpmTasks('grunt-html2js');
   grunt.loadNpmTasks('grunt-contrib-compress');
   grunt.loadNpmTasks('grunt-uncss');
@@ -462,7 +470,7 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
-      'bowerInstall',
+      'wiredep',
       'concurrent:server',
       'autoprefixer',
       'connect:livereload',
@@ -485,7 +493,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
-    'bowerInstall',
+    'wiredep',
     //'ts:build',
     //'html2js',
     'useminPrepare',

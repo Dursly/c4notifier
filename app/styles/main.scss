@@ -110,3 +110,28 @@ body {
     background:#ddd;
     box-shadow:none;
 }
+
+
+.left-inner-addon {
+    padding-top:5px;
+    padding-left:5px;
+    position: relative;
+}
+.left-inner-addon input {
+    padding-left: 30px;
+    display:inline-block;
+    width:auto;
+}
+.left-inner-addon i#leftI {
+    position: absolute;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+
+ a#rightI {
+    position: absolute;
+    /*padding: 10px 0px 0px 12px;*/
+    left: 180px;
+    
+    z-index: 999;
+}

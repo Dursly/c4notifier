@@ -5,7 +5,7 @@
     "angular": ">=1.2.6",
     "jquery": ">=1.10.2",
     "sass-bootstrap": ">=3.0.2",
-    "font-awesome": ">=4.0.3",
+    "font-awesome": ">=4.1.0",
     "bootswatch-scss": ">=3.0.0",
     "angular-animate": ">=1.2.6",
     "angular-bootstrap": ">=0.7.0",

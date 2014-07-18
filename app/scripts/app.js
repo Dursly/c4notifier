@@ -7,7 +7,7 @@ angular.module('contactListManager', [
   'ui.bootstrap'
 ])
   .config(function ($routeProvider,$logProvider) {
-    $logProvider.debugEnabled(false);
+    $logProvider.debugEnabled(true);
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -37,4 +37,26 @@ angular.module('contactListManager', [
         return res;
       }
     };
+  })
+  .filter('myFilter', function(){
+    return function(items,text){
+      if(typeof text === 'undefined'){
+        return items;
+      }
+      if( text === ''){
+        return items;
+      }
+      else{
+        var res = [];
+        console.log('Testo da cercare: ' + text);
+        for( var i = 0; i < items.length; i++){
+          console.log(items[i].nome);
+          if( items[i].nome.indexOf(text) != -1 ){
+            res.push(items[i]);
+          }
+        }
+        console.log(res.length);
+        return res;
+      }   
+    }
   });
